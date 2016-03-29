@@ -1,0 +1,12 @@
+p:not(.intro) {
+  font-size: 21px;
+  text-align: justify;
+  font-weight: 200;
+}
+.margins {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+body {
+  background-color: white;
+}

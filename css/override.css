@@ -14,12 +14,15 @@ body {
   background-color: #3380CC;
 }
 img {
-  max-height: 100%;
+  max-height: 95%;
 
   border-color: gray;
 }
 .evil {
   background-color: #A64D4D;
+}
+p.profile {
+  float: left;
 }
 .navbar {
   border-radius: 0px;

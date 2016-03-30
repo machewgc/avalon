@@ -25,55 +25,45 @@
     <script src="assets/js/respond.min.js"></script>
   <![endif]-->
 </head>
-	<body>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse" role="navigation">
+  <div class="container-fluid">
 
-		<!-- Navigation -->
-	    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-			<div class="container-fluid">
-
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html">Avalon</a>
-				</div>
-				<!-- /.navbar-header -->
-
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li><a href="aa.html">Avalonamous</a></li>
-						<li><a href="play.html">Play Avalon</a></li>
-						<li><a href="rulebook.html">Rulebook</a></li>
-					</ul>
-				</div>
-				<!-- /.navbar-collapse -->
-			</div>
-			<!-- /.container-fluid -->
-		</nav>
+  <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Avalon</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+				<li><a href="aa.html">Avalonamous</a></li>
+				<li><a href="play.html">Play Avalon</a></li>
+				<li><a href="rulebook.html">Rulebook</a></li>
+        <li><a href="login.html">Login/Register</a></li>
+			</ul>
+		</div>
+	<!-- /.navbar-collapse -->
+	</div>
+  <!-- /.container-fluid -->
+  </nav>
 		<!-- /.navbar -->
-
 		<!-- Page Content -->
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-sm-12">
-          <a name="avalonamous"></a>
-					<!-- Page breadcrumb -->
-					<ol class="breadcrumb">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="#avalonamous">Avalonamous</a></li>
-            <li><a href="#12step">12 Step</a></li>
-            <li><a href="#contact">Contact us</a></li>
-					</ol>
 
+    <div class="container-fluid">
+      <div class="row">
+        <div class="text-justify jumbotron">
 					<!-- Page Heading -->
 					<h1>A place for broken Merlins</h1>
-					<p class="lead">Sometimes Avalon gets the best of us, and when that happens it is important to get help. Here at Avalonamous we understand the needs that broken Merlins have and are ready to help you on your path to recovery with our 12 step program.</p>
-
+					<p class="intro">Sometimes Avalon gets the best of us, and when that happens it is important to get help. Here at Avalonamous we understand the needs that broken Merlins have and are ready to help you on your path to recovery with our 12 step program.</p>
+        </div>
+        <div class="margins">
 					<blockquote>
 						<p>What the fuck! Matt fake Merlin telled me and I can't handle life anymore.</p>
 						<footer>Everyone</footer>
@@ -81,6 +71,7 @@
 					<hr>
 
 					<!-- Tables -->
+        <div class="col-sm-12">
           <a name="12step"></a>
 					<h3>Our 12 Step Program</h3>
 					<table class="table table-striped">
@@ -179,11 +170,11 @@
 						</form>
 					</div>
 					<hr>
-
+        </div>
 				</div>
 			</div>
 			<!-- /.row -->
-		</div>
+    </div>
 		<!-- /.container-fluid -->
 
 		<!-- JQuery scripts -->

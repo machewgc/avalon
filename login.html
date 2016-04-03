@@ -39,6 +39,7 @@
         if (response.status === 'connected') {
           // Logged into your app and Facebook.
           testAPI();
+          getFBPic();
         } else if (response.status === 'not_authorized') {
           // The person is logged into Facebook, but not your app.
           document.getElementById('status').innerHTML = 'Please log ' +
@@ -107,14 +108,11 @@
         });
       }
       /* make the API call to retrieve a profile picture*/
-      FB.api(
-          "/me/picture",
-          function (response) {
-            if (response && !response.error) {
-              /* handle the result */
-            }
-          }
-      );
+      function getFBPic () {
+        FB.api('/me', function(response) {
+            document.getElementById("profileImage").setAttribute("src", "http://graph.facebook.com/" + response.id + "/picture?type=small");
+        });
+      }
     </script>
     <nav class="navbar navbar-inverse" role="navigation">
       <div class="container-fluid">
@@ -146,26 +144,12 @@
     <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
     </fb:login-button>
 
-    <fb:picture type="small">
-    </fb:picture>
-
-    <fb:picture type="normal">
-    </fb:picture>
-
-    <fb:picture type="album">
-    </fb:picture>
-
-    <fb:picture type="large">
-    </fb:picture>
-
-    <fb:picture type="square">
-    </fb:picture>
-
 
     <div id="status">
     </div>
 
-
+    <img id="profileImage">
+    </img>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

@@ -106,9 +106,17 @@
             'Thanks for logging in, ' + response.name + '!';
         });
       }
+      /* make the API call to retrieve a profile picture*/
+      FB.api(
+          "/me/picture",
+          function (response) {
+            if (response && !response.error) {
+              /* handle the result */
+            }
+          }
+      );
     </script>
-    <!-- Navigation -->
-      <nav class="navbar navbar-inverse" role="navigation">
+    <nav class="navbar navbar-inverse" role="navigation">
       <div class="container-fluid">
 
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -133,13 +141,32 @@
       </div>
       <!-- /.container-fluid -->
     </nav>
-    <!-- /.navbar -->
+  <!-- /.navbar -->
 
     <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
     </fb:login-button>
 
+    <fb:picture type="small">
+    </fb:picture>
+
+    <fb:picture type="normal">
+    </fb:picture>
+
+    <fb:picture type="album">
+    </fb:picture>
+
+    <fb:picture type="large">
+    </fb:picture>
+
+    <fb:picture type="square">
+    </fb:picture>
+
+
     <div id="status">
     </div>
+
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>

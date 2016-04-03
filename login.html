@@ -38,8 +38,8 @@
         // for FB.getLoginStatus().
         if (response.status === 'connected') {
           // Logged into your app and Facebook.
-          testAPI();
-          getFBPic();
+          //testAPI();
+          getFBinfo();
         } else if (response.status === 'not_authorized') {
           // The person is logged into Facebook, but not your app.
           document.getElementById('status').innerHTML = 'Please log ' +
@@ -108,9 +108,10 @@
         });
       }
       /* make the API call to retrieve a profile picture*/
-      function getFBPic () {
+      function getFBinfo () {
         FB.api('/me', function(response) {
-            document.getElementById("profileImage").setAttribute("src", "http://graph.facebook.com/" + response.id + "/picture?type=small");
+            document.getElementById("fbPic").setAttribute("src", "http://graph.facebook.com/" + response.id + "/picture?type=small");
+            document.getElementById('fbName').innerHTML = response.name;
         });
       }
     </script>
@@ -134,22 +135,17 @@
             <li><a href="play.html">Play Avalon</a></li>
             <li><a href="rulebook.html">Rulebook</a></li>
           </ul>
+          <div align="right">
+            <img id="fbPic"></img>
+            <!--<div id="fbName"></div>-->
+            <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+          </div>
         </div>
         <!-- /.navbar-collapse -->
       </div>
       <!-- /.container-fluid -->
     </nav>
   <!-- /.navbar -->
-
-    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-    </fb:login-button>
-
-
-    <div id="status">
-    </div>
-
-    <img id="profileImage">
-    </img>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

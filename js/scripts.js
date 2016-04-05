@@ -1,6 +1,13 @@
 $(document).ready(function() {
   $("#hidden1").click(function() {
     $("#paragraph-hidden1").slideToggle();
+    $("#hidden1").hide();
+    $("#hidden1-right").show();
+  });
+  $("#hidden1-right").click(function() {
+    $("#paragraph-hidden1").slideToggle();
+    $("#hidden1").show();
+    $("#hidden1-right").hide();
   });
   $("#hidden2").click(function() {
     $("#paragraph-hidden2").slideToggle();

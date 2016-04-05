@@ -79,3 +79,13 @@ p.profile {
 .glyphicon-chevron-down:hover {
   text-decoration: underline;
 }
+.glyphicon-chevron-right {
+  cursor: pointer;
+  color: #0088cc;
+}
+.glyphicon-chevron-right:hover {
+  text-decoration: underline;
+}
+#hidden1-right {
+  display: none;
+}

@@ -72,3 +72,10 @@ p.profile {
 .mini {
   font-size: 10px;
 }
+.glyphicon-chevron-down {
+  cursor: pointer;
+  color: #0088cc;
+}
+.glyphicon-chevron-down:hover {
+  text-decoration: underline;
+}

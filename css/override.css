@@ -59,3 +59,16 @@ p.profile {
   outline: 0;
   opacity: .75;
 }
+.paragraph-hidden {
+  display: none;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.table-hidden {
+  display: none;
+}
+.mini {
+  font-size: 10px;
+}

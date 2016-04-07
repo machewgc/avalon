@@ -89,3 +89,13 @@ p.profile {
 #hidden1-right {
   display: none;
 }
+img.good:hover {
+  border: 3px solid #3380CC;
+}
+img.evil:hover {
+  border: 3px solid #A64D4D;
+}
+img.col-md-2 {
+  padding-right: 0px;
+  border: 3px solid #eee;
+}

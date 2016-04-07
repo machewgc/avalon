@@ -27,10 +27,11 @@ $(document).ready(function() {
   $("#hidden7").click(function() {
     $("#paragraph-hidden7").slideToggle();
   });
-  /*Added class to turn rows blue and back to gray again after hovering over merlin*/
+  /*Added class to turn rows blue and back to gray again after hovering over merlin
     $("#merlin").hover(function() {
     $(this).addClass("good");
   }, function() {
     $("#merlin").removeClass("good");
   });
+  */
 });

@@ -33,5 +33,10 @@ $(document).ready(function() {
   }, function() {
     $(".merlin").removeClass("good");
   });
-
+  $("#player1").click(function() {
+    $("#player1").toggleClass("selected");
+  });
+  $("#player2").click(function() {
+    $("#player2").toggleClass("selected");
+  });
 });

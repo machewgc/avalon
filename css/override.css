@@ -102,3 +102,46 @@ img.col-md-2 {
 /*#merlin-pic:hover .paragraph-hidden3 {
   position:relative; top:0px; width:320px; height:240px; background:#FF2400; opacity:.7;
 }*/
+.fb-photo {
+  width: 50%;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+.team-token {
+  width: 20%;
+  vertical-align: bottom;
+  padding-bottom: 10px;
+}
+.vote-token {
+  right: 0px;
+  width: 20%;
+  vertical-align: bottom;
+  padding-bottom: 10px;
+}
+.board {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: inherit;
+}
+.party-vote {
+  width: 20%;
+  margin-left: 10%;
+}
+.board-box {
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.crown {
+  width: 50%;
+}
+.side {
+}
+.player:hover {
+  border: 1px solid gold;
+}
+.player {
+  border: 1px solid #3380CC;
+}
+.selected {
+  border: 1px solid gold;
+}

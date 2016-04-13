@@ -39,4 +39,15 @@ $(document).ready(function() {
   $("#player2").click(function() {
     $("#player2").toggleClass("selected");
   });
+  /*Disables options for removing Merlin for > 5 players*/
+  $( "#numberPlayers" ).change(function() {
+    var numberPlayers = parseInt($("#numberPlayers").val());
+    if (numberPlayers > 5) {
+      $( "#includeMerlin" ).prop( "disabled", true );
+      $( "#includeMerlin" ).val("yes");
+    }
+    else {
+      $( "#includeMerlin" ).prop( "disabled", false );
+    }
+  });
 });
